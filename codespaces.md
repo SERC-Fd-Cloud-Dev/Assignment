@@ -55,8 +55,7 @@ The following extensions are automatically installed to enhance API development:
 The devcontainer applies the following default editor settings:
 
 - **Format on Save**: Enabled
-- **Default Formatter**: Prettier
-- **Python Linting**: Enabled with Pylint
+- **Default Formatter**: Prettier (for general files)
 - **Python Formatting**: Black formatter
 - **Default Terminal**: Bash
 
