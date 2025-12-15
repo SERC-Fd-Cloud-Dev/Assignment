@@ -1,6 +1,6 @@
 # Codespaces and Dev Container Settings
 
-This document describes the devcontainer and codespace configuration for the Assignment repository.
+This document describes the devcontainer and codespace configuration for this repository.
 
 ## Overview
 

@@ -33,7 +33,7 @@ To merge an existing repository into this one while preserving its history:
 ```bash
 # Clone this repository
 git clone <this-repo-url>
-cd Assignment
+cd <repository-name>
 
 # Add your existing repository as a remote
 git remote add existing-repo <your-existing-repo-url>
