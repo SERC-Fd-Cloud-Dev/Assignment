@@ -1,0 +1,71 @@
+{
+  "name": "API Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-vscode.vscode-typescript-next",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "humao.rest-client",
+        "rangav.vscode-thunder-client",
+        "42crunch.vscode-openapi",
+        "github.copilot",
+        "github.copilot-chat"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        }
+      }
+    }
+  },
+
+  "forwardPorts": [3000, 5000, 8000, 8080],
+  
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "notify"
+    },
+    "5000": {
+      "label": "API",
+      "onAutoForward": "notify"
+    },
+    "8000": {
+      "label": "Backend",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Web Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "postCreateCommand": "echo 'Dev container ready for API development!'",
+
+  "remoteUser": "codespace"
+}
