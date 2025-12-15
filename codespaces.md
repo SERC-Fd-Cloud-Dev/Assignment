@@ -31,6 +31,7 @@ The following extensions are automatically installed to enhance API development:
 #### Language Support
 - `ms-python.python` - Python language support
 - `ms-python.vscode-pylance` - Advanced Python IntelliSense
+- `ms-python.black-formatter` - Black code formatter for Python
 - `ms-vscode.vscode-typescript-next` - TypeScript and JavaScript support
 - `dbaeumer.vscode-eslint` - JavaScript/TypeScript linting
 
