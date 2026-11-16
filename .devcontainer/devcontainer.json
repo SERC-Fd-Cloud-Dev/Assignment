@@ -1,0 +1,53 @@
+{
+  "name": "Cloud Development Assignment",
+  "image": "ghcr.io/serc-computing/devcontainers/cloud-dev-assignment:1",
+  "forwardPorts": [5432, 6379],
+  "portsAttributes": {
+    "5432": {
+      "label": "PostgreSQL"
+    },
+    "6379": {
+      "label": "Redis"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "sqltools.connections": [
+          {
+            "name": "MariaDB",
+            "driver": "MariaDB",
+            "server": "localhost",
+            "port": 3306,
+            "database": "mysql",
+            "username": "root",
+            "askForPassword": true
+          },
+          {
+            "name": "PostgreSQL",
+            "driver": "PostgreSQL",
+            "server": "localhost",
+            "port": 5432,
+            "database": "postgres",
+            "username": "postgres",
+            "askForPassword": true
+          },
+          {
+            "name": "MSSQL",
+            "driver": "MSSQL",
+            "server": "localhost",
+            "port": 1433,
+            "database": "master",
+            "username": "sa",
+            "askForPassword": true
+          },
+          {
+            "name": "SQLite",
+            "driver": "SQLite",
+            "database": "${containerWorkspaceFolder}/database.sqlite"
+          }
+        ]
+      }
+    }
+  }
+}
